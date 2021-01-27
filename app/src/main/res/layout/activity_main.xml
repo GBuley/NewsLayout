@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         style="@style/image"
-        app:srcCompat="@drawable/ic_kneel_pr"
+        app:srcCompat="@drawable/imrs"
         android:layout_below="@id/top_coverage"
         >
     </com.google.android.material.imageview.ShapeableImageView>
@@ -148,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         style="@style/sub_image"
-        app:srcCompat="@drawable/ic_puerto_cbs"
+        app:srcCompat="@drawable/cbs_puerto_rico"
         android:layout_below="@id/cbs_news_image"
         android:layout_toEndOf="@id/second_headline"
         >
@@ -200,7 +200,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         style="@style/sub_image"
-        app:srcCompat="@drawable/ic_puertorico"
+        app:srcCompat="@drawable/power_line_pr"
         android:layout_below="@id/cnn_news_image"
         android:layout_toEndOf="@id/third_headline"
         >

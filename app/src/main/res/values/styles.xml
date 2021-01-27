@@ -12,7 +12,6 @@
 
     <style name="image">
         <item name="android:maxHeight">200dp</item>
-        <item name="android:background">@color/design_default_color_secondary</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyTheme.Image</item>
@@ -21,7 +20,6 @@
     <style name="sub_image">
         <item name="android:maxHeight">60dp</item>
         <item name="android:maxWidth">40dp</item>
-        <item name="android:background">@color/design_default_color_secondary</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyTheme.Image</item>
