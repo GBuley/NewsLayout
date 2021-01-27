@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="sign_up">Sign Up</string>
-    <string name="top_coverage">Top Coverage</string>
+    <string name="top_coverage">Top coverage</string>
     <string name="puerto_rico_power_outage">Puerto Rico Power Outage</string>
+    <string name="full_coverage">Full Coverage</string>
+    <string name="headline_text">Puerto Rico back in darkness after island-wide blackout</string>
+    <string name="top_time">1 hour ago</string>
+    <string name="tc_headline_dots">...</string>
+    <string name="second_headline">Puerto Rico loses power island-wide for first time since Hurricane Maria in U.S. territory</string>
+    <string name="third_headline">Puerto Rico suffers island-wide power outage</string>
+    <string name="third_time">4 hours ago</string>
+    <string name="second_time">3 hours ago</string>
 </resources>

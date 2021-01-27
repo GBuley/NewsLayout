@@ -13,16 +13,19 @@
         android:id="@+id/back_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_x_draw"
+        android:maxHeight="12sp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_back_icon_draw"
         >
     </com.google.android.material.imageview.ShapeableImageView>
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/fc_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_x_draw"
-        android:layout_centerHorizontal="true"
-        android:layout_toStartOf="@id/full_coverage"
+        android:maxHeight="12sp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_app_icon_draw"
+        android:layout_marginStart="100dp"
         >
     </com.google.android.material.imageview.ShapeableImageView>
 
@@ -31,7 +34,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Full Coverage"
+        android:text="@string/full_coverage"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline6"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/fc_image"
         >
     </com.google.android.material.textview.MaterialTextView>
 
@@ -41,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/full_coverage"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline2"
         android:layout_centerHorizontal="true"
         android:paddingVertical="10dp"
 
@@ -56,8 +63,11 @@
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/top_coverage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/top_coverage"
+        android:paddingVertical="15dp"
+        android:layout_below="@+id/first_divider"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline5"
         >
     </com.google.android.material.textview.MaterialTextView>
 
@@ -65,8 +75,152 @@
         android:id="@+id/top_coverage_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_x_draw">
+        android:layout_marginBottom="10dp"
+        style="@style/image"
+        app:srcCompat="@drawable/ic_kneel_pr"
+        android:layout_below="@id/top_coverage"
+        >
     </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/washington_post_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/news_group"
+        android:src="@drawable/ic_washingtonpost"
+        android:layout_below="@id/top_coverage_image"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tc_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headline_text"
+        android:layout_below="@id/washington_post_image"
+        android:textAppearance="@style/TextAppearance.MyTheme.Headline3"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/top_time"
+        android:text="@string/top_time"
+        android:layout_below="@id/tc_headline"
+        style="@style/time"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tc_headline_dots"
+        style="@style/dots"
+        android:layout_below="@id/tc_headline"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <View
+        android:id="@+id/second_divider"
+        style="@style/divider"
+        android:layout_below="@id/top_time"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cbs_news_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/news_group"
+        android:src="@drawable/ic_cbsnews2"
+        android:layout_below="@id/second_divider"
+        android:layout_marginTop="15dp"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/second_headline"
+        style="@style/sub_headline"
+        android:layout_below="@id/cbs_news_image"
+        android:text="@string/second_headline"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/second_coverage_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        style="@style/sub_image"
+        app:srcCompat="@drawable/ic_puerto_cbs"
+        android:layout_below="@id/cbs_news_image"
+        android:layout_toEndOf="@id/second_headline"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/second_time"
+        android:text="@string/second_time"
+        android:layout_below="@id/second_headline"
+        style="@style/time"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/second_headline_dots"
+        style="@style/dots"
+        android:layout_below="@id/second_headline"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <View
+        android:id="@+id/third_divider"
+        style="@style/divider"
+        android:layout_below="@id/second_time"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cnn_news_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/news_group"
+        android:src="@drawable/ic_cnn_logo"
+        android:layout_below="@id/third_divider"
+        android:layout_marginTop="15dp"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/third_headline"
+        style="@style/sub_headline"
+        android:layout_below="@id/cnn_news_image"
+        android:text="@string/third_headline"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/third_coverage_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        style="@style/sub_image"
+        app:srcCompat="@drawable/ic_puertorico"
+        android:layout_below="@id/cnn_news_image"
+        android:layout_toEndOf="@id/third_headline"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/third_time"
+        android:text="@string/third_time"
+        android:layout_below="@id/third_headline"
+        style="@style/time"
+        >
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/third_headline_dots"
+        style="@style/dots"
+        android:layout_below="@id/third_headline"
+        android:layout_marginTop="20dp"
+        >
+    </com.google.android.material.textview.MaterialTextView>
 
 
 </RelativeLayout>
